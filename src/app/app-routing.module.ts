@@ -1,10 +1,24 @@
-import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { AppComponent } from "./app.component";
+import { Router, RouterModule, Routes } from '@angular/router';
+import { CadastroClienteComponent } from "./cadastro-cliente/cadastro-cliente.component";
+import { NgModule } from "@angular/core";
 
-const routes: Routes = [];
+
+var rotas: Routes = [
+  {
+     path: "", 
+component: CadastroClienteComponent
+  }
+
+]
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [
+    RouterModule.forRoot(rotas)
+  ],
+  exports: [
+    RouterModule
+  ]
+
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

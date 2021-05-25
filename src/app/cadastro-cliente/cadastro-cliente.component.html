@@ -1,0 +1,32 @@
+<h1>Cadastro</h1>
+
+<form id="forms" [formGroup]="formClient" (ngSubmit)="signUp()">
+    <div class="name">
+        <label for="name">Nome:</label>
+        <input formControlName="name" type="text" name="name" id="name" placeholder="Digite seu nome">
+    </div>
+
+    <div class="cpf">
+        <label for="cpf">CPF:</label>
+        <input formControlName="cpf" type="number" name="cpf" id="cpf" placeholder="Digite seu CPF">
+    </div>    
+
+    <div class="email">
+        <label for="email">E-mail:</label>
+        <input formControlName="email" type="email" name="email" id="email" placeholder="Digite seu e-mail">
+    </div>
+    
+    <div class="phone">
+        <label for="phone">Telefone:</label>
+        <input formControlName="phone" type="number" name="phone" id="phone" placeholder="Digite seu telefone">
+    </div>
+
+    <div class="password">
+        <label for="password">Senha:</label>
+        <input formControlName="password" type="password" name="password" id="password" placeholder="Digite sua senha">
+    </div>
+
+    <div class="button-signup">
+        <button type="submit">Cadastrar</button>
+    </div>
+</form>
