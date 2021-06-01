@@ -7,7 +7,9 @@ import { FormBuilder, FormGroup, FormsModule, Validators } from '@angular/forms'
   styleUrls: ['./cadastro-cliente.component.scss']
 })
 export class CadastroClienteComponent {
+
   public formClient: FormGroup;
+  
   constructor(private formBuilder: FormBuilder) {
     this.formClient = this.formBuilder.group({
       name: [null, [Validators.required]],
